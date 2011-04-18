@@ -1,0 +1,49 @@
+####################################################################
+# Copyright (c) 2007-2009 CyberInfrastructure and Geospatial       #
+#                         Information Laboratory (CIGI)            #
+# University of Illinois at Urbana-Champaign, All Rights Reserved. #
+####################################################################
+
+## Application configuration
+app.dms.datadir = storage 
+app.dms.remoteexe = release/process.pl
+app.dms.serviceurl = http://localhost:8080/axis2/services/TEST?wsdl
+app.dms.usboundary = resources/bnd_uspolygon.dat
+
+## Grid configuration
+# Security
+grid.myproxy.server    = myproxy.teragrid.org
+grid.myproxy.port      = 7514
+grid.myproxy.username  = dmiao
+grid.myproxy.password  = Xifbc9ij
+grid.myproxy.proxyfile = /tmp/x509up_u500
+
+# Grid resources
+grid.sites = ABE, QB, CIGI
+grid.defaultsite = ABE
+grid.defaultsite.gram = GT2
+grid.sites.dmsdir.ABE = /u/ac/dmiao/nucri/TESTAPP
+grid.sites.dmsdir.QB = TGHOME_QB/nucri/TESTAPP
+grid.sites.dmsdir.CIGI = TGHOME_CIGI/nucri/TESTAPP
+
+# Data transfer
+grid.gridftp.ABE = gridftp-abe.ncsa.teragrid.org
+grid.gridftp.QB = gridftp-qb.loni-lsu.teragrid.org
+grid.gridftp.CIGI = everest.cigi.uiuc.edu
+
+# Job submission
+grid.gram.ABE = grid-abe.ncsa.teragrid.org:2119/jobmanager-pbs
+grid.gram.QB = grid-qb.loni-lsu.teragrid.org:2119/jobmanager-pbs
+grid.gram.CIGI = everest.cigi.uiuc.edu/jobmanager-pbs
+grid.wsgram.ABE = https://grid-abe.ncsa.teragrid.org:8443/wsrf/services/ManagedJobFactoryService
+grid.wsgram.rm.ABE = PBS
+grid.wsgram.QB = https://grid-qb.loni-lsu.teragrid.org:8443/wsrf/services/ManagedJobFactoryService
+grid.wsgram.rm.QB = PBS
+
+## web server: db config
+db.host = localhost
+db.user = root
+db.pass = kobebryant
+db.db = simplegrid
+
+

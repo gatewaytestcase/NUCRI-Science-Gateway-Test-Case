@@ -1,0 +1,9 @@
+&  (jobType=single)
+        (count=1)
+        (host_count="1")
+        (executable="TGHOME/gisolve/DMS/release/process.pl")
+        (arguments="300" "300" "5" "INPUTDATASET" "OUTPUTDATASET" )
+        (directory="TGHOME/gisolve/DMS/release")
+        (stdout="STDOUT")
+        (stderr="STDERR")
+

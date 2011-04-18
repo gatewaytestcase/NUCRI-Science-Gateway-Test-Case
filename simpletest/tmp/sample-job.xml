@@ -1,0 +1,20 @@
+<job>
+    <factoryEndpoint
+          xmlns:gram="http://www.globus.org/namespaces/2004/10/gram/job"
+          xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/03/addressing">
+        <wsa:Address>https://grid-hg.ncsa.teragrid.org:8443/wsrf/services/ManagedJobFactoryService</wsa:Address>
+        <wsa:ReferenceProperties>
+            <gram:ResourceID>PBS</gram:ResourceID>
+        </wsa:ReferenceProperties>
+    </factoryEndpoint>
+    <executable>/home/ac/gisolve/gisolve/DMS/release/process.pl</executable>
+    <directory>/home/ac/gisolve/gisolve/DMS/release</directory>
+    <argument>500</argument>
+    <argument>500</argument>
+    <argument>5</argument>
+    <argument>/home/ac/gisolve/tutorial/train01.dat</argument>
+    <argument>/home/ac/gisolve/tutorial/train01-result2.dat</argument>
+    <stdout>/home/ac/gisolve/tutorial/stdout.train01-2.dat</stdout>
+    <stderr>/home/ac/gisolve/tutorial/stderr.train01-2.dat</stderr>
+</job>
+
